@@ -1,0 +1,25 @@
+@media (min-width: 90rem) {
+  body {
+    background-image: url('../assets/bg-pattern-1.svg'),
+      url('../assets/bg-main-desktop.png');
+    background-position: top calc(-1 * clamp(2rem, 1.19vw + 1.43rem, 2.5rem))
+        right calc(-1 * clamp(0.0063rem, -5.36vw + 4.82rem, 2.25rem)),
+      top -19.5rem center;
+    background-size: clamp(16.6875rem, 6.7vw + 13.47rem, 19.5rem) auto, auto;
+  }
+
+  header {
+    padding-left: 0;
+    width: 69.375rem;
+  }
+
+  main {
+    padding: clamp(5.9375rem, 4.76vw + 3.65rem, 7.9375rem) 0 0 0;
+    width: 69.375rem;
+  }
+
+  footer {
+    width: 69.375rem;
+    padding: clamp(11.4375rem, 2.83vw + 10.08rem, 12.625rem) 0 6.25rem 0;
+  }
+}
