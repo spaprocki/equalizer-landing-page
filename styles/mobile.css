@@ -1,0 +1,346 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+/* Design system styles */
+
+:root {
+  --cyan: #66e2dc;
+  --orange: #fa7453;
+  --yellow: #ffb964;
+  --white: #fcfaf9;
+  --black: #191826;
+}
+
+body {
+  background-color: var(--white);
+  background-image: url('../assets/bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-position: top -96vw left 0;
+  background-size: 200vw auto;
+  font-family: 'IBM Plex Sans', 'sans-serif';
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--black);
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+header {
+  padding: clamp(2.5rem, 2.07vw + 2.02rem, 3.875rem)
+    clamp(1.5rem, 4.07vw + 0.55rem, 2.5rem) 0
+    clamp(1.5rem, 4.07vw + 0.55rem, 2.5rem);
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  padding-top: clamp(4rem, 7.89vw + 2.15rem, 5.9375rem);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.description-section {
+  width: clamp(20.4375rem, 49.11vw + 8.93rem, 32.5rem);
+  margin-left: clamp(1.5rem, 4.07vw + 0.55rem, 2.5rem);
+}
+
+.page-heading {
+  font-size: clamp(2.5rem, 6.11vw + 1.07rem, 4rem);
+  font-weight: 700;
+  line-height: clamp(3rem, 4.07vw + 2.05rem, 4rem);
+  letter-spacing: calc(-1 * clamp(0.0284rem, 0.07vw + 0.01rem, 0.0455rem));
+}
+
+.description-paragraph {
+  margin-top: clamp(1.25rem, 2.04vw + 0.77rem, 1.75rem);
+  font-size: clamp(1rem, 0.51vw + 0.88rem, 1.125rem);
+  line-height: clamp(1.625rem, 0.51vw + 1.51rem, 1.75rem);
+}
+
+.download-section {
+  background-image: url('../assets/bg-pattern-2.svg');
+  background-repeat: no-repeat;
+  background-position: left clamp(3rem, 46.06vw + -7.79rem, 14.3125rem) top
+    calc(-1 * clamp(0.0063rem, 7.89vw + -1.85rem, 1.9375rem));
+  align-self: center;
+  position: relative;
+  margin-top: clamp(10.375rem, 21.12vw + 5.43rem, 15.5625rem);
+  width: clamp(375px, 81.68vw + 4.29rem, 696px);
+  height: 37.5rem;
+  background-color: var(--black);
+  border-radius: 0.75rem;
+}
+
+.app-illustration {
+  position: absolute;
+  top: calc(-1 * clamp(6.125rem, 10.18vw + 3.74rem, 8.625rem));
+  left: clamp(4rem, -4.07vw + 5.95rem, 5rem);
+  width: clamp(13.125rem, 15.27vw + 9.55rem, 16.875rem);
+}
+
+.download-card {
+  position: absolute;
+  top: clamp(9.375rem, -58.52vw + 37.47rem, 23.75rem);
+  right: clamp(0.0063rem, 14.73vw + -3.45rem, 3.625rem);
+  width: clamp(23.4375rem, 6.11vw + 22.01rem, 24.9375rem);
+  background-color: var(--orange);
+  padding: 3rem clamp(2.25rem, 3.05vw + 1.53rem, 3rem);
+  color: var(--white);
+  border-radius: 0.75rem;
+}
+
+.card-heading {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+
+.card-paragraph {
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.price-per-month {
+  margin-top: 2.25rem;
+  font-weight: 700;
+  font-size: 4.0625rem;
+  line-height: 3.25rem;
+  display: flex;
+  align-items: center;
+}
+
+.price-per-month span {
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 2rem;
+  letter-spacing: -0.0125rem;
+  margin-left: 1rem;
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 3.8125rem;
+  border: none;
+  border-radius: 0.75rem;
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 2rem;
+  letter-spacing: 0.0112rem;
+  cursor: pointer;
+}
+
+.ios-download-button {
+  background-color: var(--black);
+  color: var(--white);
+  margin-top: 32px;
+  transition: background-color 0.2s;
+}
+
+.ios-download-button:hover {
+  background-color: var(--cyan);
+}
+
+button img {
+  width: 17px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.android-download-button {
+  background-color: var(--white);
+  color: var(--black);
+  margin-top: 16px;
+  transition: background-color 0.2s;
+}
+
+.android-download-button:hover {
+  background-color: var(--yellow);
+}
+
+footer {
+  width: 100%;
+  padding: clamp(183px, -52.67vw + 36.72rem, 390px)
+    clamp(1.5rem, 4.07vw + 0.55rem, 2.5rem) 6.25rem
+    clamp(1.5rem, 4.07vw + 0.55rem, 2.5rem);
+}
+
+.footer-logo {
+  margin-bottom: 2rem;
+  width: 9.125rem;
+  height: 2rem;
+}
+
+.attribution-and-links {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.attribution {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  width: clamp(20.4375rem, 3.66vw + 19.58rem, 22.875rem);
+}
+
+.attribution a {
+  font-weight: 700;
+  text-decoration: none;
+  color: inherit;
+}
+
+.icons-container {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.icons-container img:hover {
+  transition: color 0.2s;
+  filter: invert(76%) sepia(52%) saturate(5941%) hue-rotate(327deg)
+    brightness(102%) contrast(96%);
+}
+
+@media (min-width: 48rem) {
+  body {
+    background-image: url('../assets/bg-pattern-1.svg'),
+      url('../assets/bg-main-tablet.png');
+    background-repeat: no-repeat, no-repeat;
+    background-position: top calc(-1 * clamp(2rem, 1.19vw + 1.43rem, 2.5rem))
+        right calc(-1 * clamp(0.1px, -5.36vw + 4.82rem, 2.25rem)),
+      top -312px right calc(50% + 100px);
+    background-size: clamp(16.6875rem, 6.7vw + 13.47rem, 19.5rem) auto, auto;
+  }
+
+  header {
+    padding-left: clamp(2.5rem, 18.6vw + -6.43rem, 10.3125rem);
+  }
+
+  main {
+    padding: clamp(5.9375rem, 4.76vw + 3.65rem, 7.9375rem)
+      clamp(2.5rem, 18.6vw + -6.43rem, 10.3125rem) 0
+      clamp(2.5rem, 18.6vw + -6.43rem, 10.3125rem);
+  }
+
+  .description-section {
+    width: clamp(520px, 73.66vw + -2.86rem, 1015px);
+    margin-left: 0;
+  }
+
+  .page-heading {
+    font-size: clamp(4rem, 3.57vw + 2.29rem, 5.5rem);
+    line-height: clamp(4rem, 3.57vw + 2.29rem, 5.5rem);
+    letter-spacing: calc(-1 * clamp(0.0455rem, 0.04vw + 0.03rem, 0.0455rem));
+  }
+
+  .description-paragraph {
+    margin-top: clamp(1.75rem, 1.79vw + 0.89rem, 2.5rem);
+    font-size: clamp(1.125rem, 0.3vw + 0.98rem, 1.25rem);
+    line-height: clamp(1.75rem, 0.89vw + 1.32rem, 2.125rem);
+    max-width: 51.5625rem;
+  }
+
+  .download-section {
+    margin-top: clamp(15.5625rem, 10.71vw + 10.42rem, 20.0625rem);
+    width: 100%;
+    background-position: left clamp(14.3125rem, 15.92vw + 6.67rem, 21rem) top
+      calc(-1 * clamp(0.0063rem, 7.89vw + -1.85rem, 1.9375rem));
+  }
+
+  .app-illustration {
+    top: calc(-1 * clamp(8.625rem, 11.16vw + 3.27rem, 13.3125rem));
+    left: clamp(4rem, 8.33vw, 7.5rem);
+    width: clamp(16.875rem, 6.25vw + 13.88rem, 19.5rem);
+  }
+
+  .download-card {
+    top: clamp(5.625rem, -8.93vw + 13.66rem, 9.375rem);
+    right: clamp(3.625rem, 5.51vw + 0.98rem, 5.9375rem);
+    width: clamp(24.9375rem, 6.99vw + 21.58rem, 27.875rem);
+    padding: clamp(3rem, 1.49vw + 2.29rem, 3.625rem)
+      clamp(3rem, 1.19vw + 2.43rem, 3.5rem) 3rem
+      clamp(3rem, 1.19vw + 2.43rem, 3.5rem);
+  }
+
+  .card-heading {
+    font-size: clamp(2rem, 1.19vw + 1.43rem, 2.5rem);
+    line-height: clamp(2.5rem, 1.79vw + 1.64rem, 3.25rem);
+  }
+
+  .card-paragraph {
+    margin-top: clamp(0.75rem, 1.49vw + 0.04rem, 1.375rem);
+    font-size: clamp(1.125rem, 0.3vw + 0.98rem, 1.25rem);
+    line-height: clamp(1.75rem, 0.89vw + 1.32rem, 2.125rem);
+  }
+
+  .price-per-month {
+    margin-top: clamp(2.25rem, 0.6vw + 1.96rem, 2.5rem);
+  }
+
+  .ios-download-button {
+    margin-top: clamp(2rem, 2.08vw + 1rem, 2.875rem);
+  }
+
+  footer {
+    padding: clamp(183px, 2.83vw + 10.08rem, 202px)
+      clamp(2.5rem, 18.6vw + -6.43rem, 10.3125rem) 6.25rem
+      clamp(2.5rem, 18.6vw + -6.43rem, 10.3125rem);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  .footer-logo {
+    margin-right: 8.625rem;
+  }
+
+  .attribution-and-links {
+    margin-top: 0rem;
+    flex-wrap: nowrap;
+    gap: auto;
+    flex: 2;
+  }
+
+  .attribution {
+    width: clamp(20.4375rem, 3.66vw + 19.58rem, 22.875rem);
+  }
+
+  .icons-container {
+    display: flex;
+    gap: 1.25rem;
+  }
+}
+
+@media (min-width: 90rem) {
+  body {
+    background-image: url('../assets/bg-pattern-1.svg'),
+      url('../assets/bg-main-desktop.png');
+    background-position: top calc(-1 * clamp(2rem, 1.19vw + 1.43rem, 2.5rem))
+        right calc(-1 * clamp(0.0063rem, -5.36vw + 4.82rem, 2.25rem)),
+      top -312px center;
+    background-size: clamp(16.6875rem, 6.7vw + 13.47rem, 19.5rem) auto, auto;
+  }
+
+  header {
+    padding-left: 0;
+    width: 69.375rem;
+  }
+
+  main {
+    padding: clamp(5.9375rem, 4.76vw + 3.65rem, 7.9375rem) 0 0 0;
+    width: 69.375rem;
+  }
+
+  footer {
+    width: 69.375rem;
+    padding: clamp(11.4375rem, 2.83vw + 10.08rem, 12.625rem) 0 6.25rem 0;
+  }
+}
