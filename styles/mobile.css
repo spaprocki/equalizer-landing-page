@@ -203,7 +203,7 @@ footer {
   list-style-type: none;
 }
 
-.icons-container img:hover {
+.icons-container svg:hover {
   transition: color 0.2s;
   filter: invert(76%) sepia(52%) saturate(5941%) hue-rotate(327deg)
     brightness(102%) contrast(96%);
